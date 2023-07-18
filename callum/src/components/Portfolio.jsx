@@ -18,6 +18,7 @@ const Portfolio = () => {
     laravel: "Laravel",
     ci: "CodeIgniter",
     bez: "Bez CMS",
+    react: 'React'
   };
 
   const types = {
@@ -40,7 +41,6 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/morocco.jpg",
           "images/projects/morocco2.jpg",
           "images/projects/morocco3.jpg", 
           "images/projects/morocco4.jpg", 
@@ -62,7 +62,6 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/pupavy.jpg",
           "images/projects/pupavy2.jpg",
           "images/projects/pupavy3.jpg", 
           "images/projects/pupavy4.jpg", 
@@ -84,7 +83,6 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/spievankovo.jpg",
           "images/projects/spievankovo2.jpg",
           "images/projects/spievankovo3.jpg",  
         ],
@@ -101,7 +99,6 @@ const Portfolio = () => {
         technologies: "HTML5, CSS3, PHP, Wordpress, E-shop.",
 
         sliderImages: [
-          "images/projects/lovecolors.jpg",
           "images/projects/lovecolors2.jpg",
           "images/projects/lovecolors3.jpg",  
         ],
@@ -122,7 +119,6 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/tvojeharmony.jpg",
           "images/projects/tvojeharmony2.jpg",
           "images/projects/tvojeharmony3.jpg",  
         ],
@@ -139,7 +135,6 @@ const Portfolio = () => {
         technologies: "HTML5, CSS3, PHP, MySQL, CodeIgniter",
 
         sliderImages: [
-          "images/projects/skolenia.jpg",
           "images/projects/skolenia2.jpg",
           "images/projects/skolenia3.jpg",  
         ],
@@ -160,7 +155,6 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/fitmeet.jpg",
           "images/projects/fitmeet2.jpg",
           "images/projects/fitmeet3.jpg",  
         ],
@@ -181,7 +175,6 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/plzenka.png",
           "images/projects/plzenka2.png",
           "images/projects/plzenka3.png",  
         ],
@@ -202,14 +195,33 @@ const Portfolio = () => {
         },
 
         sliderImages: [
-          "images/projects/vtaciapomoc.jpg",
           "images/projects/vtaciapomoc2.jpg",
           "images/projects/vtaciapomoc3.jpg",  
         ],
       },
 
       thumbImage: "images/projects/vtaciapomoc.jpg", 
-      categories: [filters.DETAILED],
+      categories: [filters.wp],
+    },
+        {
+      title: "Nadácia Good Boy", 
+      type: types.DOCUMENT,
+      document: {
+        projectInfo: "Nadácia Good boy nie je reálna webstránka. Bol to projekt na ktorom som si odskúšal prácu v Reacte, impelementoval kniznice na formular a použil som Redux pre state managment.",
+        technologies: "HTML5, CSS3, Javascript, REACT, REDUX",
+        url: {
+          name: "Nadácia Good boy",
+          link: "https://www.elias.best/good-boy/",
+        },
+
+        sliderImages: [
+          "images/projects/good-boy2.jpg",
+          "images/projects/good-boy3.jpg",  
+        ],
+      },
+
+      thumbImage: "images/projects/good-boy.jpg", 
+      categories: [filters.react],
     },
     // {
     //   title: "Mockups Design 1",
