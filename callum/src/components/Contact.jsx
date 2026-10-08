@@ -55,66 +55,25 @@ const Contact = () => {
   return (
     <section id="contact" className="section bg-primary">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-5 text-center text-lg-start wow fadeInUp">
-            <h2 className="text-10 fw-600 mb-5">Kontakt</h2>
-            <p className="text-5 mb-5">
+        <div className="row align-items-center">
+          <div className="col-lg-7 text-center text-lg-start wow fadeInUp">
+            <h2 className="text-8 fw-600 mb-3">Kontakt</h2>
+            <p className="mb-4">
               Kontaktujte ma, ak máte záujem prediskutovať Váš projekt. Rád Vám pomôžem s Vaším novým alebo aj s existujúcim projektom.
             </p>
-            {/* <h3 className="text-5 fw-600">Pochádzam z:</h3>
-            <address className="text-4">
-              Veľkej Mače 
-            </address> */}
-            <h3 className="text-5 fw-600">Mobil:</h3>
-            <p className="text-4"><a href="tel:0911729581" className="footer-link">0911729581</a></p>
-            <h3 className="text-5 fw-600">Email:</h3>
-            <p className="text-4"><a href="mailto:patrik@elias.best" className="footer-link">patrik@elias.best</a></p>
-            <ul className="social-icons social-icons-lg justify-content-center justify-content-lg-start mt-5">
-           
-              {/* <li className="social-icons-facebook">
-                <Tooltip text="Facebook" placement="top">
-                  <a
-                    href="https://www.facebook.com/patrik.elias.7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook" />
-                  </a>
-                </Tooltip>
-              </li>  */}
-              {/* <li className="social-icons-github">
-                <Tooltip text="Github" placement="top">
-                  <a
-                    href="http://www.github.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github" />
-                  </a>
-                </Tooltip>
-              </li> */}
-              {/* <li className="social-icons-dribbble">
-                <Tooltip text="Dribbble" placement="top">
-                  <a
-                    href="http://www.dribbble.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-dribbble" />
-                  </a>
-                </Tooltip>
-              </li> */}
-            </ul>
-          </div>
-          <div
-            className="col-lg-6 ms-auto mt-5 mt-lg-0 wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div className="row g-4">
-                <div className="col-md-8 offset-md-2 text-center">
-                    <img className="img-fluid rounded-pill d-block" src="images/web-developer.jpg" title="Patrik" alt="Patrik"/>
-                </div>
+            <div className="d-sm-flex justify-content-center justify-content-lg-start gap-sm-5">
+              <div className="mb-3 mb-sm-0">
+                <h3 className="text-4 fw-600 mb-1">Mobil:</h3>
+                <p className="mb-0"><a href="tel:0911729581" className="footer-link">0911729581</a></p>
+              </div>
+              <div>
+                <h3 className="text-4 fw-600 mb-1">Email:</h3>
+                <p className="mb-0"><a href="mailto:patrik@elias.best" className="footer-link">patrik@elias.best</a></p>
+              </div>
             </div>
+          </div>
+          <div className="col-lg-5 text-center mt-4 mt-lg-0 wow fadeInUp" data-wow-delay="0.3s">
+            <img className="img-fluid rounded-pill d-block mx-auto" src="images/web-developer.jpg" title="Patrik" alt="Patrik"/>
           </div>
         </div>
       </div>

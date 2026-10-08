@@ -20,4 +20,4 @@ export const appliedConfig = {
 
 };
 
-export const scrollDuration = 1000;
+export const scrollDuration = 450;

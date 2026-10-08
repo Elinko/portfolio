@@ -16,7 +16,7 @@ const StandardMenuHeader = () => {
             <Link
               className="logo"
               title="Elias"
-              smooth="easeInOutQuint"
+              smooth="easeOutCubic"
               duration={scrollDuration}
               style={{ cursor: "pointer" }}
               offset={-72}
@@ -54,7 +54,7 @@ const StandardMenuHeader = () => {
                 {/* <li className="nav-item">
                   <Link
                     className="nav-link "
-                    smooth="easeInOutQuint"
+                    smooth="easeOutCubic"
                     duration={scrollDuration}
                     style={{ cursor: "pointer" }}
                     activeClass="active"
@@ -72,7 +72,7 @@ const StandardMenuHeader = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link "
-                    smooth="easeInOutQuint"
+                    smooth="easeOutCubic"
                     duration={scrollDuration}
                     style={{ cursor: "pointer" }}
                     activeClass="active"
@@ -89,7 +89,7 @@ const StandardMenuHeader = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link "
-                    smooth="easeInOutQuint"
+                    smooth="easeOutCubic"
                     duration={scrollDuration}
                     style={{ cursor: "pointer" }}
                     activeClass="active"
@@ -106,7 +106,7 @@ const StandardMenuHeader = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link "
-                    smooth="easeInOutQuint"
+                    smooth="easeOutCubic"
                     duration={scrollDuration}
                     style={{ cursor: "pointer" }}
                     activeClass="active"
@@ -123,7 +123,7 @@ const StandardMenuHeader = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link "
-                    smooth="easeInOutQuint"
+                    smooth="easeOutCubic"
                     duration={scrollDuration}
                     style={{ cursor: "pointer" }}
                     activeClass="active"
@@ -140,7 +140,7 @@ const StandardMenuHeader = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link "
-                    smooth="easeInOutQuint"
+                    smooth="easeOutCubic"
                     duration={scrollDuration}
                     style={{ cursor: "pointer" }}
                     activeClass="active"

@@ -18,7 +18,8 @@ const Portfolio = () => {
     laravel: "Laravel",
     ci: "CodeIgniter",
     bez: "Bez CMS",
-    react: 'React'
+    vlastne: "Vlastné",
+    react: "Next.js"
   };
 
   const types = {
@@ -29,32 +30,201 @@ const Portfolio = () => {
 
   const projectsData = [
     {
-      title: "Morocco dream tour", 
+      title: "Terminio",
       type: types.DOCUMENT,
       document: {
         projectInfo:
-          "Informačný portál pre cestovnú kanceláriu, kde sa môžu zákazníci informovať o rôznych turistických výletoch do Maroka. Súčasťou je redakčných systém, blog, registrácie na zájazdy.",
-        technologies: "HTML5, CSS3, Gulp, PHP, Wordpress, MySQL",
+          "Multi-tenant SaaS na online rezervácie pre kadernícke a beauty salóny. Salón má vlastnú stránku a dashboard na termíny, služby a klientov. Súčasťou je schvaľovanie salónov, viackrokový booking, SMS OTP a ochrana proti spamu.",
+        technologies:
+          "React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, Postgres",
         url: {
-          name: "www.moroccodreamtour.com",
-          link: "https://moroccodreamtour.com/",
+          name: "www.terminio.sk",
+          link: "https://www.terminio.sk/",
         },
 
         sliderImages: [
-          "images/projects/morocco2.jpg",
-          "images/projects/morocco3.jpg", 
-          "images/projects/morocco4.jpg", 
+          "images/projects/terminio2.png",
+          "images/projects/terminio3.png",
         ],
       },
 
-      thumbImage: "images/projects/morocco.jpg", 
+      thumbImage: "images/projects/terminio1.png",
+      categories: [filters.vlastne, filters.react],
+    },
+    {
+      title: "Kariéra SSD",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Kariérna stránka Stredoslovenskej distribučnej. Voľné pozície sa filtrujú podľa lokality a odboru, súčasťou sú aj príbehy zamestnancov.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "www.karierassd.sk",
+          link: "https://www.karierassd.sk/",
+        },
+
+        sliderImages: [
+          "images/projects/ssd2.jpg",
+          "images/projects/ssd3.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/ssd1.jpg",
       categories: [filters.wp],
     },
     {
-      title: "Púpavy Hviezdoslav      ", 
+      title: "UNIQA GSC",
       type: types.DOCUMENT,
       document: {
-        projectInfo: "Spolupráca na prezentácii developérskej výstavby bytov. Kladený dôraz na animácie a kreativitu. Webstránka s redakčným systémom na administráciu dostupných a predaných bytov.        ",
+        projectInfo:
+          "Kariérna stránka UNIQA Group Service Center. IT pozície sa filtrujú podľa miesta a dátumu, súčasťou sú príbehy kolegov a prehľad benefitov.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "napredujsnami.uniqa-gsc.sk",
+          link: "https://napredujsnami.uniqa-gsc.sk/",
+        },
+
+        sliderImages: [
+          "images/projects/uniqa2.jpg",
+          "images/projects/uniqa3.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/uniqa1.jpg",
+      categories: [filters.wp],
+    },
+    // Ďalšie projekty pridávať až sem, UNIQA GSC ostáva tretia.
+    {
+      title: "Karpatská Trenčín",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Prezentácia prémiových bytov v Trenčíne. Cenník filtruje ponuku podľa budovy, podlažia a dispozície, detail bytu ukazuje pôdorys, výmery a cenu.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "karpatskatrencin.sk",
+          link: "https://karpatskatrencin.sk/",
+        },
+
+        sliderImages: [
+          "images/projects/karpatska2.jpg",
+          "images/projects/karpatska3.jpg",
+          "images/projects/karpatska4.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/karpatska1.jpg",
+      categories: [filters.wp],
+    },
+    {
+      title: "Smartbar",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Kvízový automat na svadby, firemné eventy a detské párty. Hostia hádajú otázky a automat čapuje nápoj. Texty, otázky, nápoje aj rezervácie sú plne editovateľné.",
+        technologies: "Next.js",
+        url: {
+          name: "smartbar.sk",
+          link: "https://smartbar.sk/",
+        },
+
+        sliderImages: ["images/projects/smartbar2.jpg"],
+      },
+
+      thumbImage: "images/projects/smartbar1.jpg",
+      categories: [filters.vlastne, filters.react],
+    },
+    {
+      title: "TATRAROPES",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Prezentácia výrobcu syntetických lán. Produkty sa filtrujú podľa pevnosti a priemeru, detail ukazuje parametre a technický list.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "tatraropes.com",
+          link: "https://tatraropes.com/",
+        },
+
+        sliderImages: [
+          "images/projects/timm2.jpg",
+          "images/projects/timm3.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/timm.jpg",
+      categories: [filters.wp],
+    },
+    {
+      title: "Glasora",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Objednávkový portál výrobcu izolačných skiel. Obchodník alebo klient nakonfiguruje sklo do okna — skladbu, rámik, rozmery a úpravy — a sleduje stav objednávky.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "klientglasora.sk",
+          link: "https://klientglasora.sk/",
+        },
+
+        sliderImages: [
+          "images/projects/glasora2.jpg",
+          "images/projects/glasora3.jpg",
+          "images/projects/glasora4.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/glasora1.jpg",
+      categories: [filters.wp],
+    },
+    {
+      title: "Sedin Apartments",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Prezentácia apartmánov a víl v golfovom rezorte pri jazere. Cenník filtruje ponuku podľa typu, výmery a dostupnosti, súčasťou je aj kalkulačka hypotéky.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "apartmanysedin.sk",
+          link: "https://apartmanysedin.sk/",
+        },
+
+        sliderImages: [
+          "images/projects/sedin2.jpg",
+          "images/projects/sedin3.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/sedin.jpg",
+      categories: [filters.wp],
+    },
+    {
+      title: "Byty Zicher",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo:
+          "Prezentácia skolaudovaných bytov v centre Martina. Cenník filtruje ponuku podľa dispozície a dostupnosti, detail bytu ukazuje pôdorys, výmery a vybavenie.",
+        technologies: "HTML5, CSS3, PHP, Wordpress",
+        url: {
+          name: "www.bytyzicher.sk",
+          link: "https://www.bytyzicher.sk/",
+        },
+
+        sliderImages: [
+          "images/projects/zicher2.jpg",
+          "images/projects/zicher3.jpg",
+          "images/projects/zicher4.jpg",
+        ],
+      },
+
+      thumbImage: "images/projects/zicher1.jpg",
+      categories: [filters.wp],
+    },
+    {
+      title: "Púpavy Hviezdoslav",
+      type: types.DOCUMENT,
+      document: {
+        projectInfo: "Prezentácia developerského projektu bytov s dôrazom na animácie. Dostupné a predané byty sa spravujú v administrácii.",
         technologies: "HTML5, CSS3, Gulp, PHP, Laravel.",
         url: {
           name: "www.pupavyhviezdoslav.sk",
@@ -75,7 +245,7 @@ const Portfolio = () => {
       title: "Spievankovo", 
       type: types.DOCUMENT,
       document: {
-        projectInfo: "Webstránka spievankovo je prezentácia skupiny s informáciami o ich koncertoch, histórii a hercoch s redakčným systémom pred editáciu koncertov.        ",
+        projectInfo: "Prezentácia skupiny: koncerty, história a účinkujúci. Termíny koncertov sa upravujú v administrácii.",
         technologies: "HTML5, CSS3, PHP, SQL, Wordpress.",
         url: {
           name: "spievankovo.sk",
@@ -92,26 +262,10 @@ const Portfolio = () => {
       categories: [filters.wp],
     },
     {
-      title: "Lovecolors", 
-      type: types.DOCUMENT,
-      document: {
-        projectInfo: "Webová prezentácia značky Lovecolors, ručne vyrábaných detských doplnkov a šiat pre dospelých. Súčasťou je administrácia a blog, neskôr bol web obohatený o eshop.        ",
-        technologies: "HTML5, CSS3, PHP, Wordpress, E-shop.",
-
-        sliderImages: [
-          "images/projects/lovecolors2.jpg",
-          "images/projects/lovecolors3.jpg",  
-        ],
-      },
-
-      thumbImage: "images/projects/lovecolors.jpg", 
-      categories: [filters.wp],
-    },
-    {
       title: "Tvojeharmony", 
       type: types.DOCUMENT,
       document: {
-        projectInfo: "Tvojeharmony je webová prezentácia produktov a zároveň aj blog s novinkami, radami a zaujímavosťami z domácností, predovšetkým pre využitie produktov Harmony priamo v praxi.        ",
+        projectInfo: "Produktový web a blog s novinkami a praktickými radami k použitiu produktov Harmony.",
         technologies: "HTML5, CSS3, PHP, SQL, API, Brevo, Wordpress.",
         url: {
           name: "www.tvojeharmony.sk",
@@ -131,7 +285,7 @@ const Portfolio = () => {
       title: "Evidencia školení", 
       type: types.DOCUMENT,
       document: {
-        projectInfo: "Webová aplikácia školenia slúži pre školiteľov rôznych kurzov a licencií, aby si mohli viesť evidenciu svojich zákazníkov. Aplikácia dokáže vytvárať a editovať kurzy, pridávať nové firmy a nových zákazníkov. <br/> Slúži umožňuje školiteľom zapisovať dátumy, kedy končia ľuďom dané kurzy, aby nikomu neprepadlo školenie.",
+        projectInfo: "Evidencia kurzov, firiem a účastníkov pre školiteľov. Systém ukazuje, kedy klientom končí platnosť školenia.",
         technologies: "HTML5, CSS3, PHP, MySQL, CodeIgniter",
 
         sliderImages: [
@@ -147,7 +301,7 @@ const Portfolio = () => {
       title: "ZSE FitMeet", 
       type: types.DOCUMENT,
       document: {
-        projectInfo: "ZSE FitMeet vznikol na podnet pribúdajúceho HomeOffice. FitMeet prináša pohybové videá s tematikou Body workout, Jóga, Pilates, Strečing... Webstránka je bez administrácie, pracuje čisto len s Javascriptom, kde sú uložené linky na videá z youtube a texty.        ",
+        projectInfo: "Katalóg cvičení pre zamestnancov na home office: body workout, jóga, pilates a strečing. Videá sa prehrávajú z YouTube, bez administrácie.",
         technologies: "HTML5, CSS3, PHP, Javascript, Youtube API.",
         url: {
           name: "zsefitmeet.sk",
@@ -164,30 +318,10 @@ const Portfolio = () => {
       categories: [filters.bez],
     },
     {
-      title: "Plzeňka", 
-      type: types.DOCUMENT,
-      document: {
-        projectInfo: "Webstránka slúži na vyhladávanie reštaurácií alebo hospod so značkou plzeňka. K dispozícii je administrácia na vytváranie nových reštaurácií, umiestneni na mape, editácia obsahu jednodlivých reštaurácií a hospod.",
-        technologies: "HTML5, CSS3, PHP, Laravel, SQL.",
-        url: {
-          name: "plzenka.pilsner-urquell.cz",
-          link: "https://plzenka.pilsner-urquell.cz/",
-        },
-
-        sliderImages: [
-          "images/projects/plzenka2.png",
-          "images/projects/plzenka3.png",  
-        ],
-      },
-
-      thumbImage: "images/projects/plzenka.png", 
-      categories: [filters.laravel],
-    },
-    {
       title: "Vtáčia pomoc", 
       type: types.DOCUMENT,
       document: {
-        projectInfo: "Vtáčia pomoc je webstránka pre pomoc nájdených a zranenách vtákov, cicavcov, či plazov. Web je založený na wordpresse. Umožňuje administráciu zvierat a kvízových odpovedí na otázky o zvieratách.",
+        projectInfo: "Web na pomoc nájdeným a zraneným vtákom, cicavcom a plazom. V administrácii sa spravujú zvieratá a kvíz.",
         technologies: "HTML5, CSS3, PHP, jQuery, Wordpress.",
         url: {
           name: "vtaciapomoc.sk",
@@ -207,7 +341,7 @@ const Portfolio = () => {
       title: "Nadácia Good Boy", 
       type: types.DOCUMENT,
       document: {
-        projectInfo: "Nadácia Good boy nie je reálna webstránka. Bol to projekt na ktorom som si odskúšal prácu v Reacte, impelementoval kniznice na formular a použil som Redux pre state managment.",
+        projectInfo: "Cvičný projekt fiktívnej nadácie. Formuláre a stav aplikácie sú riešené cez Redux, web nie je v ostrej prevádzke.",
         technologies: "HTML5, CSS3, Javascript, REACT, REDUX",
         url: {
           name: "Nadácia Good boy",

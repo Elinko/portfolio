@@ -31,6 +31,18 @@
   }
 }
 
+#contact.section {
+  padding: 2.5rem 0;
+}
+
+#contact img.img-fluid {
+  max-width: 160px;
+
+  @include media-breakpoint-down(sm) {
+    max-width: 120px;
+  }
+}
+
 /*=== 4.1 Navigation ===*/
 
 .navbar-light .navbar-nav {

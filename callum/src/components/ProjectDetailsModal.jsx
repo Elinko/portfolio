@@ -133,20 +133,22 @@ const ProjectDetailsModal = ({ projectDetails, setIsOpen }) => {
                             </span>
                             {projectDetails?.document?.technologies}
                           </li>  
-                          <li>
-                            <span className={"text-dark fw-600 me-2"}>
-                              URL:
-                            </span>
-                            <a
-                              href={projectDetails?.document?.url?.name}
-                              className="btn btn-primary shadow-none rounded-0 px-3 py-1"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {projectDetails?.document?.url?.name}
-                              <i className="fas fa-external-link-alt ms-1" />
-                            </a>
-                          </li>
+                          {projectDetails?.document?.url?.link && (
+                            <li>
+                              <span className={"text-dark fw-600 me-2"}>
+                                URL:
+                              </span>
+                              <a
+                                href={projectDetails.document.url.link}
+                                className="btn btn-primary shadow-none rounded-0 px-3 py-1"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {projectDetails.document.url.name}
+                                <i className="fas fa-external-link-alt ms-1" />
+                              </a>
+                            </li>
+                          )}
                         </ul>
                       </div>
                     </div>

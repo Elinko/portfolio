@@ -6,6 +6,10 @@ body, html {
 height:100%;
 }
 
+:root {
+  scroll-behavior: auto;
+}
+
 body {
   background: $body-bg;
   font-family: $body-font;

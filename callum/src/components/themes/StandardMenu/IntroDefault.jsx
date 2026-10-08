@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Typewriter from "typewriter-effect";
 import { scrollDuration } from "../../../config/commonConfig";
 
 const StandardMenuDefaultIntro = () => {
@@ -12,19 +11,12 @@ const StandardMenuDefaultIntro = () => {
       <div className="container my-auto pb-5 py-lg-0">
         <div className="row py-4">
           <div className="col-lg-7 text-center text-lg-start align-self-center order-1 order-lg-0">
-            <h1 className="text-12 fw-300 mb-0 text-uppercase">
-              VOLAJÚ MA PATRIK
-            </h1>
-            <h2 className="text-21 fw-600 text-uppercase mb-0 ms-n1">
-              <Typewriter
-                options={{
-                  strings: ["Eliáš", "Developer", "FREELANCER"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h2>
-            <p className="text-5">s vášnou pre webové aplikácie.</p>
+            <p className="text-4 fw-600 text-uppercase mb-2">Patrik Eliáš</p>
+            <h1 className="text-11 fw-600 mb-3">Webové aplikácie na mieru</h1>
+            <p className="text-4 mb-1">
+              Programujem ich od návrhu po nasadenie. Od prezentácie cez
+              rezervácie až po administráciu.
+            </p>
             <Link
               className="btn btn-dark rounded-0 smooth-scroll mt-3"
               smooth="easeInOutQuint"

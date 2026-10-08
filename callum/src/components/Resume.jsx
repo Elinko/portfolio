@@ -19,7 +19,13 @@ const Resume = () => {
 
   const experienceDetails = [
     {
-      yearRange: "2017 - súčastnosť",
+      yearRange: "2023 - súčasnosť",
+      title: "Backend developer",
+      place: "Galton Brands",
+      desc: "Vývoj na mieru robených webových aplikácií, od návrhu až po nasadenie. Popri vývoji mám na starosti aj manažovanie projektov, komunikáciu s klientmi a dohadovanie požiadaviek, termínov a ďalšieho postupu.",
+    },
+    {
+      yearRange: "2017 - 2023",
       title: "Developer",
       place: "Elite / Monday Lovers s.r.o. ",
       desc: "Z počiatku to bolo zalamovanie frontendu stránky z grafických podkladov (photoshop, figma, Adobe XD...), príprava namieru robených emailov. Postupne som sa stal vývojárom vo wordpresse a čo to naučil aj v Laraveli, Cake, CodeIgniteri.  ",
@@ -54,6 +60,10 @@ const Resume = () => {
       percent: 70,
     },
     {
+      name: "AI",
+      percent: 85,
+    },
+    {
       name: "MySQL",
       percent: 50
     },
@@ -66,7 +76,7 @@ const Resume = () => {
       percent: 50,
     }, 
     {
-      name: "Svojpomocna stavba domu pocas Covidu: murovanie, armovanie, malovanie, sadrokarton, obkladanie, kominar, vodar, elektrikar",
+      name: "Svojpomocná stavba domu: murár, elektrikár, vodár, obkladač, sadrokartonista, záhradkár",
       percent: 80,
     }, 
 

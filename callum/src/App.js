@@ -43,26 +43,17 @@ function App() {
     new WOW.WOW({
       live: false,
     }).init();
-  }, []);
 
-  const checkScrollTop = () => {
-    let scrollTopBtn = document.getElementById("back-to-top");
-
-    if (scrollTopBtn) {
-      if (
+    const checkScrollTop = () => {
+      const scrolled =
         document.body.scrollTop > 400 ||
-        document.documentElement.scrollTop > 400
-      ) {
-        setScrollTopVisible(true);
-      } else {
-        setScrollTopVisible(false);
-      }
-    }
-  };
+        document.documentElement.scrollTop > 400;
+      setScrollTopVisible(scrolled);
+    };
 
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", checkScrollTop);
-  }
+    window.addEventListener("scroll", checkScrollTop, { passive: true });
+    return () => window.removeEventListener("scroll", checkScrollTop);
+  }, []);
 
   const getHeader = () => {
     if (appliedTheme === themeConfig.BottomHeader) {
@@ -127,7 +118,7 @@ function App() {
             <Portfolio></Portfolio>
             <Contact></Contact>
           </div>
-          {/* <Footer handleNavClick={handleNavClick}></Footer> */}
+          <Footer></Footer>
         </div>
         {/* back to top */}
         <Tooltip text="Back to Top" placement="left">
