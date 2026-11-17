@@ -10,22 +10,22 @@ const Services = () => {
     },
     {
       name: "Frontend",
-      desc: "Naprogramujem Vám Seo friendly, responzívny web s technológiami HTML5, CSS3, SCSS, JQUERY, JS, REACT, GULP.",
+      desc: "Naprogramujem Vám SEO friendly, responzívny web s technológiami HTML5, CSS3, SCSS, JavaScript, TypeScript, React, Next.js a Tailwind.",
       icon: "fas fa-desktop",
     },
     {
       name: "Backend",
-      desc: "V závislosti od projektu Vám pripravím bezpečnú, na mieru šitú administráciu v redakčnom systéme Wordpress, Laravel či CodeIgniter.",
+      desc: "V závislosti od projektu Vám pripravím bezpečnú, na mieru šitú administráciu – vo WordPresse, Laravel, CodeIgniter, Next.js s Payload CMS alebo Supabase.",
       icon: "fas fa-pencil-ruler",
     },
     {
-      name: "Analýza",
-      desc: "Na Váš web nasadím analytiká, aby sme zistili, čo ľudia navštevujú a ktoré časti webu treba zlepšiť.",
-      icon: "fas fa-paint-brush",
+      name: "Server a hosting",
+      desc: "Váš web nasadím a prevádzkujem na zabezpečenom Linux serveri – Docker, HTTPS certifikáty, zálohy, automatické nasadzovanie a vlastné firemné e-maily.",
+      icon: "fas fa-server",
     },
     {
       name: "Marketing",
-      desc: "Zriadim pre Váš web google reklamy, nastavím klúčové slová, nadpisy, lokáciu, aby bolo všetko zacielené pre Vašich zákazníkov.",
+      desc: "Nasadím analytiku a zriadim Google reklamy – kľúčové slová, nadpisy aj lokalitu nastavím tak, aby bolo všetko zacielené na Vašich zákazníkov.",
       icon: "fas fa-chart-area",
     },
     {

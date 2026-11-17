@@ -20,7 +20,7 @@ const AboutUs = () => {
               </span>
             </h2>
             <p className="text-5">
-               Už na základnej škole som sa zoznámil s programovaním. Na gymnáziu som prešiel na programovanie webových stránok, kde som sa zameral na obsah. V roku 2013 som začal študovať na FEI STU v Bratislave, získal bakalársky titul a zrealizoval prvé zákazky webstránok. V roku 2017 som začal pracovať v reklamnej agentúre firme Elite / Monday Lovers a vytvoril mnoho webových aplikácii.
+               S programovaním som začal už na základnej škole, na gymnáziu som prešiel na webstránky. Vyštudoval som aplikovanú informatiku na FEI STU v Bratislave a popri škole robil prvé zákazky. Od roku 2017 vyvíjam weby a webové aplikácie – najprv v agentúre Elite / Monday Lovers, dnes v Galton Brands, kde mám na starosti aj servery a hosting klientov. Weby dnes dodávam celé: od návrhu cez backend a databázu až po prevádzku na vlastnom Linux serveri s Dockerom, HTTPS, automatickým nasadzovaním a vlastným e-mailovým serverom.
             </p>
           </div>
           <div

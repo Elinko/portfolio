@@ -14,8 +14,8 @@ const StandardMenuDefaultIntro = () => {
             <p className="text-4 fw-600 text-uppercase mb-2">Patrik Eliáš</p>
             <h1 className="text-11 fw-600 mb-3">Webové aplikácie na mieru</h1>
             <p className="text-4 mb-1">
-              Programujem ich od návrhu po nasadenie. Od prezentácie cez
-              rezervácie až po administráciu.
+              Programujem ich od návrhu cez nasadenie až po prevádzku na
+              vlastnom serveri. Od prezentácie cez rezervácie až po administráciu.
             </p>
             <Link
               className="btn btn-dark rounded-0 smooth-scroll mt-3"

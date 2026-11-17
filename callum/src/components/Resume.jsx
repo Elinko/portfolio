@@ -22,7 +22,13 @@ const Resume = () => {
       yearRange: "2023 - súčasnosť",
       title: "Backend developer",
       place: "Galton Brands",
-      desc: "Vývoj na mieru robených webových aplikácií, od návrhu až po nasadenie. Popri vývoji mám na starosti aj manažovanie projektov, komunikáciu s klientmi a dohadovanie požiadaviek, termínov a ďalšieho postupu.",
+      desc: "Návrh architektúry a vývoj webových aplikácií na mieru, od návrhu až po nasadenie. Popri vývoji mám na starosti správu servera a webhostingu, podporu klientov a manažovanie projektov – komunikáciu s klientmi, požiadavky, termíny a ďalší postup.",
+    },
+    {
+      yearRange: "2026",
+      title: "Vlastný produkčný server",
+      place: "Linux / DevOps",
+      desc: "Vlastný VPS (Debian) so zabezpečením, Docker Compose, reverse proxy s HTTPS, vlastným e-mailovým serverom (SPF, DKIM, DMARC) a automatickým nasadzovaním cez GitHub Actions. Bežia na ňom Smartbar a Terminio.",
     },
     {
       yearRange: "2017 - 2023",
@@ -64,12 +70,20 @@ const Resume = () => {
       percent: 85,
     },
     {
-      name: "MySQL",
-      percent: 50
+      name: "MySQL / PostgreSQL / Supabase",
+      percent: 60
     },
     {
-      name: "React JS",
-      percent: 25,
+      name: "React / Next.js / TypeScript",
+      percent: 60,
+    },
+    {
+      name: "Linux / Docker / DevOps",
+      percent: 65,
+    },
+    {
+      name: "Python",
+      percent: 45,
     }, 
     {
       name: "CodeIgniter",
@@ -132,7 +146,7 @@ const Resume = () => {
           </div>
         </div>
         {/* My Skills */}
-        <h2 className="text-7 fw-600 mb-4 pb-2 mt-5 wow fadeInUp">My Skills</h2>
+        <h2 className="text-7 fw-600 mb-4 pb-2 mt-5 wow fadeInUp">Zručnosti</h2>
         <div className="row gx-5">
           {skills.length > 0 &&
             skills.map((skill, index) => (
@@ -160,7 +174,7 @@ const Resume = () => {
             href={resumeFile}
             download
           >
-            Download CV
+            Stiahnuť životopis
           </a>
         </p>
       </div>

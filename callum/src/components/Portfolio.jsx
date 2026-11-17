@@ -19,7 +19,9 @@ const Portfolio = () => {
     ci: "CodeIgniter",
     bez: "Bez CMS",
     vlastne: "Vlastné",
-    react: "Next.js"
+    react: "Next.js",
+    vite: "Vite",
+    supabase: "Supabase"
   };
 
   const types = {
@@ -36,7 +38,7 @@ const Portfolio = () => {
         projectInfo:
           "Multi-tenant SaaS na online rezervácie pre kadernícke a beauty salóny. Salón má vlastnú stránku a dashboard na termíny, služby a klientov. Súčasťou je schvaľovanie salónov, viackrokový booking, SMS OTP a ochrana proti spamu.",
         technologies:
-          "React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, Postgres",
+          "React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, Postgres, Docker",
         url: {
           name: "www.terminio.sk",
           link: "https://www.terminio.sk/",
@@ -49,7 +51,7 @@ const Portfolio = () => {
       },
 
       thumbImage: "images/projects/terminio1.png",
-      categories: [filters.vlastne, filters.react],
+      categories: [filters.vlastne, filters.vite, filters.supabase],
     },
     {
       title: "Kariéra SSD",
@@ -121,8 +123,8 @@ const Portfolio = () => {
       type: types.DOCUMENT,
       document: {
         projectInfo:
-          "Kvízový automat na svadby, firemné eventy a detské párty. Hostia hádajú otázky a automat čapuje nápoj. Texty, otázky, nápoje aj rezervácie sú plne editovateľné.",
-        technologies: "Next.js",
+          "Kvízový automat na svadby, firemné eventy a detské párty. Hostia hádajú otázky a automat čapuje nápoj. Texty, otázky, nápoje aj rezervácie sú plne editovateľné. Vyrobil som aj samotný automat – Python aplikáciu na Raspberry Pi a elektroinštaláciu. Web beží na mojom serveri v Dockeri.",
+        technologies: "Next.js, Node.js, Python, Raspberry Pi, Docker",
         url: {
           name: "smartbar.sk",
           link: "https://smartbar.sk/",

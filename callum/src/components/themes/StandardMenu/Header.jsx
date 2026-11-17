@@ -160,7 +160,7 @@ const StandardMenuHeader = () => {
           <div className="col-auto col-lg-2 d-flex justify-content-end ps-0">
             <ul className="social-icons">
               <li className="social-icons-facebook">
-                <Tooltip text="Twitter" placement="bottom">
+                <Tooltip text="Facebook" placement="bottom">
                   <a
                     href="https://www.facebook.com/patrik.elias.7"
                     target="_blank"
