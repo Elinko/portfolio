@@ -20,7 +20,6 @@ const Portfolio = () => {
     bez: "Bez CMS",
     vlastne: "Vlastné",
     react: "Next.js",
-    vite: "Vite",
     supabase: "Supabase"
   };
 
@@ -36,9 +35,9 @@ const Portfolio = () => {
       type: types.DOCUMENT,
       document: {
         projectInfo:
-          "Multi-tenant SaaS na online rezervácie pre kadernícke a beauty salóny. Salón má vlastnú stránku a dashboard na termíny, služby a klientov. Súčasťou je schvaľovanie salónov, viackrokový booking, SMS OTP a ochrana proti spamu.",
+          "Multi-tenant rezervačný systém pre kadernícke a beauty salóny. Salón má vlastnú stránku a dashboard na termíny, služby a klientov, nové salóny prechádzajú schválením. Zákazníci si termín rezervujú vo viackrokovom bookingu, prihlasujú sa a dostávajú e-mailové notifikácie, rezervácie chráni SMS OTP a ochrana proti spamu. AI asistent im pomôže vybrať službu a rezervovať voľný termín. Projekt pokrývajú automatizované testy – unit a komponentové (Vitest, React Testing Library), RLS politiky a izolácia dát salónov (pgTAP), edge funkcie (Deno) a E2E (Playwright).",
         technologies:
-          "React, TypeScript, Vite, Tailwind, shadcn/ui, Supabase, Postgres, Docker",
+          "Next.js, React, TypeScript, Supabase, Tailwind, shadcn/ui, Docker",
         url: {
           name: "www.terminio.sk",
           link: "https://www.terminio.sk/",
@@ -51,7 +50,7 @@ const Portfolio = () => {
       },
 
       thumbImage: "images/projects/terminio1.png",
-      categories: [filters.vlastne, filters.vite, filters.supabase],
+      categories: [filters.vlastne, filters.react, filters.supabase],
     },
     {
       title: "Kariéra SSD",
@@ -123,8 +122,8 @@ const Portfolio = () => {
       type: types.DOCUMENT,
       document: {
         projectInfo:
-          "Kvízový automat na svadby, firemné eventy a detské párty. Hostia hádajú otázky a automat čapuje nápoj. Texty, otázky, nápoje aj rezervácie sú plne editovateľné. Vyrobil som aj samotný automat – Python aplikáciu na Raspberry Pi a elektroinštaláciu. Web beží na mojom serveri v Dockeri.",
-        technologies: "Next.js, Node.js, Python, Raspberry Pi, Docker",
+          "Kvízový automat na svadby, firemné eventy a detské párty. Hostia hádajú otázky a automat čapuje nápoj. Web v Next.js má vlastnú administráciu obsahu a online rezervácie, ktoré chodia e-mailom cez môj vlastný mail server. Vyrobil som aj samotný automat – Python aplikáciu na Raspberry Pi a elektroinštaláciu. Web beží v Dockeri na mojom serveri a nasadzuje sa cez GitHub Actions.",
+        technologies: "Next.js, Python, Raspberry Pi, Docker, GitHub Actions",
         url: {
           name: "smartbar.sk",
           link: "https://smartbar.sk/",
